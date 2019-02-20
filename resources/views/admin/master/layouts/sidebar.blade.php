@@ -17,21 +17,21 @@
                     </a>
                     <ul class="dropdown-menu animated fadeInLeft m-t-xs">
                         <li>
-                            <a href="profile.html">
+                            <a href="#">
                             پروفایل</a>
                         </li>
                         <li>
-                            <a href="contacts.html">
+                            <a href="#">
                             مخاطبین</a>
                         </li>
                         <li>
-                            <a href="mailbox.html">
+                            <a href="#">
                             ایمیل</a>
                         </li>
                         <li class="divider">
                         </li>
                         <li>
-                            <a href="login.html">
+                            <a href="#">
                             خروج</a>
                         </li>
                     </ul>
