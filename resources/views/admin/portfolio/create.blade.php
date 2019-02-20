@@ -19,9 +19,9 @@
                             </div>
                             <div class="form-group">
                                 <label>انتخاب زیردسته</label>
-                                <select class="form-control m-b" name="subcategory_id">
-                                    @foreach ($subcategories as $subcategory)
-                                        <option value="{{ $subcategory->id }}">{{ $subcategory->title }}</option>
+                                <select class="form-control m-b" name="category_id">
+                                    @foreach ($categories as $category)
+                                        <option value="{{ $category->id }}">{{ $category->title }}</option>
                                     @endforeach
                                 </select>
                             </div>
