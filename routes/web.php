@@ -12,18 +12,12 @@
 */
 
 
-Route::get('/' , 'HomeController@index');
+Route::get('/' , 'HomeController@index')->name('index');
 
 Auth::routes();
 
-Route::get('/about-us' , function() {
-    return view('main.master');
-});
+Route::get('/about-us' , 'HomeController@aboutUs')->name('about-us');
 
-Route::get('/portfolio' , function() {
-    return view('main.master');
-});
+Route::get('/portfolio' , 'HomeController@portfolio')->name('portfolio');
 
-Route::get('/blog' , function() {
-    return view('main.master');
-});
+Route::get('/blog' , 'HomeController@blog')->name('blog');

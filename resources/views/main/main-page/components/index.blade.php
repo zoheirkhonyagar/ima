@@ -80,8 +80,10 @@
                                 </div>
                                 <div class="btClear btSeparator topSmallSpaced noBorder">
                                     <hr>
-                                </div><a href="#" class="btBtn btBtn btnOutlineStyle btnLightColor btnExtraSmall btnNormalWidth btnRightPosition btnNoIcon">
-                                    <span class="btnInnerText">نمونه کارهای طراحی لوگو</span></a>
+                                </div>
+                                <a href="#" class="btBtn btBtn btnOutlineStyle btnLightColor btnExtraSmall btnNormalWidth btnRightPosition btnNoIcon">
+                                    <span class="btnInnerText">نمونه کارهای طراحی لوگو</span>
+                                </a>
                                 <div class="btClear btSeparator topSemiSpaced noBorder">
                                     <hr>
                                 </div>

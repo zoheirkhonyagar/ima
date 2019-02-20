@@ -30,17 +30,17 @@
                     </div>
                     <nav>
                         <ul id="menu-primary-menu" class="menu">
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2">
-                                <a href="index.html">خانه</a>
+                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'index' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2" : '' }}">
+                                <a href="/">خانه</a>
                             </li>
-                            <li class="menu-item menu-item-type-post_type">
-                                <a href="about-us.html">درباره ما</a>
+                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'about-us' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2" : '' }}">
+                                <a href="/about-us">درباره ما</a>
                             </li>
-                            <li class="menu-item menu-item-type-post_type">
-                                <a href="works.html">نمونه کارهای طراحی لوگو</a>
+                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'portfolio' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2" : '' }}">
+                                <a href="/portfolio">نمونه کارهای طراحی لوگو</a>
                             </li>
-                            <li class="menu-item menu-item-type-post_type">
-                                <a href="blog.html">بلاگ</a>
+                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'blog' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2" : '' }}">
+                                <a href="/blog">بلاگ</a>
                             </li>
                         </ul>
                     </nav>
