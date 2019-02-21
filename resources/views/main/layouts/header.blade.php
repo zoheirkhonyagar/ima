@@ -4,22 +4,17 @@
                 <div class="logo">
                     <span>
                         <a href="/">
-                            <img class="btMainLogo" data-hw="3" src="images/logo-stone.png" alt="گروه تولید محتوا ایما" style="display: none;">
-                            <img class="btAltLogo" src="images/logo-stone.png" alt="گروه تولید محتوا ایما" style="display: inline;">
+                            <img class="btMainLogo" data-hw="3" src="/images/logo.png" alt="دپارتمان تولید محتوا ایما" style="display: none;">
+                            <img class="btAltLogo" src="/images/logo.png" alt="دپارتمان تولید محتوا ایما" style="display: inline;">
                         </a>
                     </span>
                 </div>
                 <div class="topBarInLogoArea"> <span class="infoToggler"></span>
                     <div class="topBarInLogoAreaCell" style="display: block;">
                         <span class="btIconWidget btSpecialHeaderIcon">
-                            <span class="btIconWidgetIcon">
-                                <span class="btIco ">
-                                    <span data-ico-fa="" class="btIcoHolder"><em></em></span>
-                                </span>
-                            </span>
                             <span class="btIconWidgetContent">
-                                <span class="btIconWidgetTitle">گروه تولید محتوا ایما</span>
-                                <span class="btIconWidgetText">تلفن : 123456</span>
+                                <span class="btIconWidgetTitle color-ima">دپارتمان تولید محتوا ایما</span>
+                                <span class="btIconWidgetText color-ima">تلفن : 123456</span>
                             </span>
                         </span>
                     </div>
@@ -30,16 +25,16 @@
                     </div>
                     <nav>
                         <ul id="menu-primary-menu" class="menu">
-                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'index' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2" : '' }}">
-                                <a href="/">خانه</a>
+                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'index' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2 color-ima" : '' }}">
+                                <a class="color-ima" href="/">خانه</a>
                             </li>
-                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'about-us' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2" : '' }}">
+                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'about-us' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2 color-ima" : '' }}">
                                 <a href="/about-us">درباره ما</a>
                             </li>
-                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'portfolio' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2" : '' }}">
+                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'portfolio' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2 color-ima" : '' }}">
                                 <a href="/portfolio">نمونه کارهای طراحی لوگو</a>
                             </li>
-                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'blog' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2" : '' }}">
+                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'blog' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2 color-ima" : '' }}">
                                 <a href="/blog">بلاگ</a>
                             </li>
                         </ul>

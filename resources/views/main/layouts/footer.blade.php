@@ -1,6 +1,6 @@
 <!-- footer start -->
 <div class="bt_rc_container">
-    <section id="bt_section5c4580bf7f197" class="boldSection topSmallSpaced bottomSmallSpaced btDarkSkin gutter inherit" style="background-color:#94774d;">
+    <section class="boldSection topSmallSpaced bottomSmallSpaced btDarkSkin gutter inherit bg-ima">
         <div class="port">
             <div class="boldCell">
                 <div class="boldCellInner">
