@@ -142,7 +142,7 @@
         </div>
     </div>
 </section>
-{{-- row 3 title --}}
+{{-- radio louzi title --}}
 <section class="boldSection topSpaced btLightSkin gutter inherit">
     <div class="port">
         <div class="boldCell">
@@ -172,7 +172,7 @@
         </div>
     </div>
 </section>
-{{-- row 3 content --}}
+{{-- radio louzi content --}}
 <section class="boldSection topSemiSpaced bottomSpaced gutter inherit">
     <div class="port">
         <div class="boldCell">
@@ -185,7 +185,9 @@
                                     <a href="#" target="_self"></a>
                                     <div class="boldPhotoBox">
                                         <div class="bpbItem">
-                                            <div class="btImage"><img src="images/post1.jpg" alt="طراحی نشان و نماد تجاری"></div>
+                                            <div class="btImage">
+                                                <img src="images/post1.jpg" alt="طراحی نشان و نماد تجاری">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="captionPane">
@@ -198,9 +200,10 @@
                                 </div>
                                 <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
                                     <div class="dash">
-                                        <h3 class="color-ima"><span class="headline">طراحی نشان و نماد تجاری</span></h3></div>
+                                        <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="#">طراحی نشان و نماد تجاری</a></span></h3>
+                                    </div>
                                 </header>
-                                <div class="btText">
+                                <div class="btText ima-bc-para">
                                     <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
                                 </div>
                             </div>
@@ -211,7 +214,9 @@
                                     <a href="#" target="_self"></a>
                                     <div class="boldPhotoBox">
                                         <div class="bpbItem">
-                                            <div class="btImage"><img src="images/post2.jpg" alt="طراحی نشان و نماد تجاری"></div>
+                                            <div class="btImage">
+                                                <img src="images/post2.jpg" alt="طراحی نشان و نماد تجاری">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="captionPane">
@@ -224,9 +229,10 @@
                                 </div>
                                 <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
                                     <div class="dash">
-                                        <h3 class="color-ima"><span class="headline">طراحی نشان و نماد تجاری</span></h3></div>
+                                        <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="#">طراحی نشان و نماد تجاری</a></span></h3>
+                                    </div>
                                 </header>
-                                <div class="btText">
+                                <div class="btText ima-bc-para">
                                     <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
                                 </div>
                             </div>
@@ -237,7 +243,9 @@
                                     <a href="#" target="_self"></a>
                                     <div class="boldPhotoBox">
                                         <div class="bpbItem">
-                                            <div class="btImage"><img src="images/post3.png" alt="طراحی نشان و نماد تجاری"></div>
+                                            <div class="btImage">
+                                                <img src="images/post3.png" alt="طراحی نشان و نماد تجاری">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="captionPane">
@@ -250,9 +258,10 @@
                                 </div>
                                 <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
                                     <div class="dash">
-                                        <h3 class="color-ima"><span class="headline">طراحی نشان و نماد تجاری</span></h3></div>
+                                        <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="#">طراحی نشان و نماد تجاری</a></span></h3>
+                                    </div>
                                 </header>
-                                <div class="btText">
+                                <div class="btText ima-bc-para">
                                     <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
                                 </div>
                             </div>
@@ -263,7 +272,9 @@
                                     <a href="#" target="_self"></a>
                                     <div class="boldPhotoBox">
                                         <div class="bpbItem">
-                                            <div class="btImage"><img src="images/post4.jpg" alt="طراحی نشان و نماد تجاری"></div>
+                                            <div class="btImage">
+                                                <img src="images/post4.jpg" alt="طراحی نشان و نماد تجاری">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="captionPane">
@@ -276,9 +287,10 @@
                                 </div>
                                 <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
                                     <div class="dash">
-                                        <h3 class="color-ima"><span class="headline">طراحی نشان و نماد تجاری</span></h3></div>
+                                        <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="#">طراحی نشان و نماد تجاری</a></span></h3>
+                                    </div>
                                 </header>
-                                <div class="btText">
+                                <div class="btText ima-bc-para">
                                     <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
                                 </div>
                             </div>
@@ -332,7 +344,9 @@
                                     <a href="#" target="_self"></a>
                                     <div class="boldPhotoBox">
                                         <div class="bpbItem">
-                                            <div class="btImage"><img src="images/post1.jpg" alt="طراحی نشان و نماد تجاری"></div>
+                                            <div class="btImage">
+                                                <img src="images/post1.jpg" alt="طراحی نشان و نماد تجاری">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="captionPane">
@@ -345,9 +359,10 @@
                                 </div>
                                 <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
                                     <div class="dash">
-                                        <h3 class="color-ima"><span class="headline">طراحی نشان و نماد تجاری</span></h3></div>
+                                        <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="#">طراحی نشان و نماد تجاری</a></span></h3>
+                                    </div>
                                 </header>
-                                <div class="btText">
+                                <div class="btText ima-bc-para">
                                     <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
                                 </div>
                             </div>
@@ -358,7 +373,9 @@
                                     <a href="#" target="_self"></a>
                                     <div class="boldPhotoBox">
                                         <div class="bpbItem">
-                                            <div class="btImage"><img src="images/post2.jpg" alt="طراحی نشان و نماد تجاری"></div>
+                                            <div class="btImage">
+                                                <img src="images/post2.jpg" alt="طراحی نشان و نماد تجاری">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="captionPane">
@@ -371,9 +388,10 @@
                                 </div>
                                 <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
                                     <div class="dash">
-                                        <h3 class="color-ima"><span class="headline">طراحی نشان و نماد تجاری</span></h3></div>
+                                        <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="#">طراحی نشان و نماد تجاری</a></span></h3>
+                                    </div>
                                 </header>
-                                <div class="btText">
+                                <div class="btText ima-bc-para">
                                     <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
                                 </div>
                             </div>
@@ -384,7 +402,9 @@
                                     <a href="#" target="_self"></a>
                                     <div class="boldPhotoBox">
                                         <div class="bpbItem">
-                                            <div class="btImage"><img src="images/post3.png" alt="طراحی نشان و نماد تجاری"></div>
+                                            <div class="btImage">
+                                                <img src="images/post3.png" alt="طراحی نشان و نماد تجاری">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="captionPane">
@@ -397,9 +417,10 @@
                                 </div>
                                 <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
                                     <div class="dash">
-                                        <h3 class="color-ima"><span class="headline">طراحی نشان و نماد تجاری</span></h3></div>
+                                        <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="#">طراحی نشان و نماد تجاری</a></span></h3>
+                                    </div>
                                 </header>
-                                <div class="btText">
+                                <div class="btText ima-bc-para">
                                     <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
                                 </div>
                             </div>
@@ -410,7 +431,9 @@
                                     <a href="#" target="_self"></a>
                                     <div class="boldPhotoBox">
                                         <div class="bpbItem">
-                                            <div class="btImage"><img src="images/post4.jpg" alt="طراحی نشان و نماد تجاری"></div>
+                                            <div class="btImage">
+                                                <img src="images/post4.jpg" alt="طراحی نشان و نماد تجاری">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="captionPane">
@@ -423,9 +446,10 @@
                                 </div>
                                 <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
                                     <div class="dash">
-                                        <h3 class="color-ima"><span class="headline">طراحی نشان و نماد تجاری</span></h3></div>
+                                        <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="#">طراحی نشان و نماد تجاری</a></span></h3>
+                                    </div>
                                 </header>
-                                <div class="btText">
+                                <div class="btText ima-bc-para">
                                     <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
                                 </div>
                             </div>

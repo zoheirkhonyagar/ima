@@ -2384,3 +2384,19 @@ h3.color-ima{
 .btText{
     text-align: justify;
 }
+
+.ima-bc-title{
+    color:#151515 !important;
+    border-bottom: 2px solid transparent;
+    transition: .25s;
+}
+
+.ima-bc-title:hover,.ima-bc-title:active{
+    color:#144e4a !important;
+    border-bottom: 2px solid #144e4a;
+    transition: .25s;
+}
+
+.ima-bc-para{
+    color:#6d6e70 !important;
+}
