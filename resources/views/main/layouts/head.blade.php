@@ -70,10 +70,6 @@
                 margin: 0;
             }
 
-            .menuPort nav ul li a:hover {
-                color: #3a3a3a!important;
-            }
-
             .menuPort nav>ul>li.menu-item-has-children>a:before {
                 content: ' ';
                 position: absolute;

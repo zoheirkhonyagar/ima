@@ -25,17 +25,17 @@
                     </div>
                     <nav>
                         <ul id="menu-primary-menu" class="menu">
-                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'index' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2 color-ima" : '' }}">
-                                <a class="color-ima" href="/">خانه</a>
+                            <li class="ima-bc-title">
+                                <a class="ima-bc-title {{ \Request::route()->getName() == 'index' ? " ima-title-active" : '' }}" href="/">خانه</a>
                             </li>
-                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'about-us' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2 color-ima" : '' }}">
-                                <a href="/about-us">درباره ما</a>
+                            <li class="ima-bc-title">
+                                <a class="ima-bc-title  {{ \Request::route()->getName() == 'about-us' ? " ima-title-active" : '' }}" href="/about-us">درباره ما</a>
                             </li>
-                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'portfolio' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2 color-ima" : '' }}">
-                                <a href="/portfolio">نمونه کارهای طراحی لوگو</a>
+                            <li class="ima-bc-title">
+                                <a class="ima-bc-title {{ \Request::route()->getName() == 'portfolio' ? " ima-title-active" : '' }}" href="/portfolio">نمونه کارهای طراحی لوگو</a>
                             </li>
-                            <li class="menu-item menu-item-type-post_type {{ \Request::route()->getName() == 'blog' ? " menu-item-object-page menu-item-home current-menu-item page_item page-item-2 color-ima" : '' }}">
-                                <a href="/blog">بلاگ</a>
+                            <li class="ima-bc-title">
+                                <a class="ima-bc-title {{ \Request::route()->getName() == 'blog' ? " ima-title-active" : '' }}" href="/blog">بلاگ</a>
                             </li>
                         </ul>
                     </nav>

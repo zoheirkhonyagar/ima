@@ -11,7 +11,7 @@
                                 </div>
                                 <header class="header btClear large  btAccentDash">
                                     <div class="dash">
-                                        <h2><span class="headline ima-bc-title">درباره شرکت هنر ساده سورن مدیا</span></h2></div>
+                                        <h2><span class="headline ima-bc-title">درباره دپارتمان تولید محتوا ایما</span></h2></div>
                                 </header>
                                 <div class="btClear btSeparator bottomSemiSpaced noBorder">
                                     <hr>
