@@ -19,6 +19,10 @@
                                 <input type="text" name="title" value="{{ $category->title }}" class="form-control">
                             </div>
                             <div class="form-group">
+                                <label>توضیحات</label>
+                                <input type="text" name="description" value="{{ $category->description }}" class="form-control">
+                            </div>
+                            <div class="form-group">
                                 <label>اولویت</label>
                                 <input type="text" name="priority" value="{{ $category->priority }}" class="form-control">
                             </div>

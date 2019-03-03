@@ -1,4 +1,4 @@
-<section id="bt_section5c498a396d464" class="boldSection topExtraSpaced bottomSmallSpaced btDarkSkin gutter inherit btAleternateColorBackground">
+<section id="bt_section5c498a396d464" class="boldSection topExtraSpaced bottomSmallSpaced btDarkSkin gutter inherit">
     <div class="port wSlider">
         <div class="boldCell">
             <div class="boldCellInner">
@@ -11,7 +11,7 @@
                                 </div>
                                 <header class="header btClear large  btAccentDash">
                                     <div class="dash">
-                                        <h2><span class="headline">درباره شرکت هنر ساده سورن مدیا</span></h2></div>
+                                        <h2><span class="headline ima-bc-title">درباره شرکت هنر ساده سورن مدیا</span></h2></div>
                                 </header>
                                 <div class="btClear btSeparator bottomSemiSpaced noBorder">
                                     <hr>
@@ -35,7 +35,7 @@
                                                                 <div class="boldRow boldInnerRow ">
                                                                     <div class="rowItem rowInnerItem col-md-12  btTextLeft">
                                                                         <div class="rowItemContent">
-                                                                            <div class="btText">
+                                                                            <div class="btText ima-bc-para">
                                                                                 <p>شرکت هنر ساده سورن مديا در سال 1380 به منظور پاسخگويی به نياز متقاضيان در کشور پهناور ايران تاسيس گرديد و با بهره گيری از دانش نوين و بروز رسانی مداوم آن توانست خود را نه تنها به عنوان اولين ها بلکه بعنوان برترين ها در اين عرصه معرفی کند. سپس در تاریخ 17 اردیبهشت 1393 به شماره ثبت 453894 در اداره ثبت شرکت های تهران ثبت شد.</p>
                                                                                 <p>سورن مديا مأموریت دارد در حوزه فناوری اطلاعات، گرافيک، و برندسازی با راه حل ها و خدمات خود به مشتريان کمک کند حضور موفقی در دنيای سايبر، تجارت الکترونيک و بازار فروش داشته باشند. خدمات سورن مديا با استراتژی ديجيتال آغاز و با خلاقيت در سبک طراحی، تکنولوژی و بازاريابی هدفمند کامل شده و به يک راه حل صحيح منجر می شود. سورن مديا با کيس های مختلف از کسب و کارهای کوچک گرفته تا شرکت ها و سازمانهای بزرگ، همکاری می کند و به همين دليل محور توسعه آنلاين برای تمام گروه ها به شمار می رود. علاوه بر اين سورن مديا با ارائه بسته هايی در حوزه تجارت الکترونيک، سيستم های مديريت محتوا و سيستم های شبکه های اجتماعی به شرکت ها اين امکان را می دهد که نقش موثر و رو به رشدی در تجارت خود داشته باشند.</p>
                                                                                 <p>چرا سورن مديا؟</p>

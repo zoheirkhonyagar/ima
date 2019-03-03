@@ -11,8 +11,7 @@
                                 </div>
                                 <header class="header btClear extralarge btDash bottomDash  btNormalDash">
                                     <div class="dash">
-                                        <h1><span class="headline">نمونه کارهای طراحی لوگو</span></h1></div>
-                                    <div class="btSubTitle">برای انتخاب یک طراح لوگو یا شرکت طراحی لوگو ، مناسب با چشم انداز هویت برند و سلیقه خود معمولا بهترین کار مراجعه به کارنامه هنری یا نمونه کارهای آن شرکت یا طراح لوگو است.</div>
+                                        <h1><span class="headline">نمونه کارها</span></h1></div>
                                 </header>
                                 <div class="btClear btSeparator topSpaced noBorder">
                                     <hr>

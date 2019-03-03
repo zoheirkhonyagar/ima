@@ -18,6 +18,10 @@
                                 <input type="text" name="title" value="{{ old('title') }}" class="form-control">
                             </div>
                             <div class="form-group">
+                                <label>توضیحات</label>
+                                <input type="text" name="description" value="{{ old('description') }}" class="form-control">
+                            </div>
+                            <div class="form-group">
                                 <label>اولویت</label>
                                 <input type="text" name="priority" value="{{ old('priority') }}" class="form-control">
                             </div>

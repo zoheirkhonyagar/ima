@@ -39,11 +39,14 @@ class CategoryController extends Controller
     {
         $this->validate($request , [
             'title' => 'required',
+            'description' => 'required',
             'priority' => 'nullable|numeric',
+
         ]);
 
         Category::create([
             'title' => $request->title,
+            'description' => $request->description,
             'priority' =>  $request->priority,
         ]);
 
@@ -83,11 +86,13 @@ class CategoryController extends Controller
     {
         $this->validate($request , [
             'title' => 'required',
+            'description' => 'required',
             'priority' => 'nullable|numeric',
         ]);
 
         $category->update([
             'title' => $request->title,
+            'description' => $request->description,
             'priority' =>  $request->priority,
         ]);
 
