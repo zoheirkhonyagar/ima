@@ -179,122 +179,37 @@
             <div class="boldCellInner">
                 <div class="boldRow ">
                     <div class="boldRowInner">
-                        <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextLeft animate animate-fadein btTextIndent inherit btDarkSkin animated">
-                            <div class="rowItemContent color-ima">
-                                <div class="bpgPhoto btTextCenter wIconOver">
-                                    <a href="#" target="_self"></a>
-                                    <div class="boldPhotoBox">
-                                        <div class="bpbItem">
-                                            <div class="btImage">
-                                                <img src="images/post1.jpg" alt="طراحی نشان و نماد تجاری">
+                        @foreach ($posts as $post)
+                            <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextLeft animate animate-fadein btTextIndent inherit btDarkSkin animated">
+                                <div class="rowItemContent color-ima">
+                                    <div class="bpgPhoto btTextCenter wIconOver">
+                                        <a href="{{ route('main.post.show' , [ 'id' => $post->id]) }}" target="_self"></a>
+                                        <div class="boldPhotoBox">
+                                            <div class="bpbItem">
+                                                <div class="btImage">
+                                                    <img src="{{ asset('uploads') . '/' . $post->image }}" alt="{{ $post->title }}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="captionPane">
+                                            <div class="captionTable">
+                                                <div class="captionCell">
+                                                    <div class="captionTxt"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="captionPane">
-                                        <div class="captionTable">
-                                            <div class="captionCell">
-                                                <div class="captionTxt"></div>
-                                            </div>
+                                    <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
+                                        <div class="dash">
+                                            <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="{{ route('main.post.show' , [ 'id' => $post->id]) }}">{{ $post->title }}</a></span></h3>
                                         </div>
+                                    </header>
+                                    <div class="btText ima-bc-para">
+                                        {{ strip_tags(substr($post->body , 0 , 351)) . ' ...' }}
                                     </div>
-                                </div>
-                                <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
-                                    <div class="dash">
-                                        <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="#">طراحی نشان و نماد تجاری</a></span></h3>
-                                    </div>
-                                </header>
-                                <div class="btText ima-bc-para">
-                                    <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextLeft animate animate-fadein btTextIndent inherit btDarkSkin animated">
-                            <div class="rowItemContent color-ima">
-                                <div class="bpgPhoto btTextCenter wIconOver">
-                                    <a href="#" target="_self"></a>
-                                    <div class="boldPhotoBox">
-                                        <div class="bpbItem">
-                                            <div class="btImage">
-                                                <img src="images/post2.jpg" alt="طراحی نشان و نماد تجاری">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="captionPane">
-                                        <div class="captionTable">
-                                            <div class="captionCell">
-                                                <div class="captionTxt"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
-                                    <div class="dash">
-                                        <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="#">طراحی نشان و نماد تجاری</a></span></h3>
-                                    </div>
-                                </header>
-                                <div class="btText ima-bc-para">
-                                    <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextLeft animate animate-fadein btTextIndent inherit btDarkSkin animated">
-                            <div class="rowItemContent color-ima">
-                                <div class="bpgPhoto btTextCenter wIconOver">
-                                    <a href="#" target="_self"></a>
-                                    <div class="boldPhotoBox">
-                                        <div class="bpbItem">
-                                            <div class="btImage">
-                                                <img src="images/post3.png" alt="طراحی نشان و نماد تجاری">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="captionPane">
-                                        <div class="captionTable">
-                                            <div class="captionCell">
-                                                <div class="captionTxt"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
-                                    <div class="dash">
-                                        <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="#">طراحی نشان و نماد تجاری</a></span></h3>
-                                    </div>
-                                </header>
-                                <div class="btText ima-bc-para">
-                                    <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextLeft animate animate-fadein btTextIndent inherit btDarkSkin animated">
-                            <div class="rowItemContent color-ima">
-                                <div class="bpgPhoto btTextCenter wIconOver">
-                                    <a href="#" target="_self"></a>
-                                    <div class="boldPhotoBox">
-                                        <div class="bpbItem">
-                                            <div class="btImage">
-                                                <img src="images/post4.jpg" alt="طراحی نشان و نماد تجاری">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="captionPane">
-                                        <div class="captionTable">
-                                            <div class="captionCell">
-                                                <div class="captionTxt"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
-                                    <div class="dash">
-                                        <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="#">طراحی نشان و نماد تجاری</a></span></h3>
-                                    </div>
-                                </header>
-                                <div class="btText ima-bc-para">
-                                    <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

@@ -18,6 +18,14 @@
                                 <input type="text" name="title" value="{{ old('title') }}" class="form-control">
                             </div>
                             <div class="form-group">
+                                <label>انتخاب دسته</label>
+                                <select class="form-control m-b" name="pcat_id">
+                                    @foreach ($pcats as $pcat)
+                                        <option value="{{ $pcat->id }}">{{ $pcat->title }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="form-group">
                                 <label>متن خبر</label>
                                 <textarea name="body" id="body" class="form-control" cols="30" rows="5">{{ old('body') }}</textarea>
                             </div>

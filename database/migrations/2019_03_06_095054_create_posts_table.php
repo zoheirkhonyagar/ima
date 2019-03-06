@@ -18,6 +18,8 @@ class CreatePostsTable extends Migration
             $table->string('title' , 200);
             $table->text('image');
             $table->text('body');
+            $table->unsignedInteger('pcat_id');
+            $table->foreign('pcat_id')->references('id')->on('pcats')->onDelete('cascade');
             $table->timestamps();
         });
     }

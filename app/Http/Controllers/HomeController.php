@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
 use App\Category;
 use App\Portfolio;
 use Illuminate\Http\Request;
@@ -26,7 +27,8 @@ class HomeController extends Controller
     public function index()
     {
         $portfolios = Portfolio::take(4)->latest()->get();
-        return view('main.main-page.index' , compact(['portfolios']));
+        $posts = Post::where('pcat_id' , 1)->take(4)->latest()->get();
+        return view('main.main-page.index' , compact(['portfolios','posts']));
     }
 
     public function aboutUs()
@@ -41,6 +43,6 @@ class HomeController extends Controller
 
     public function blog()
     {
-        return view('main.blog.index');
+        // return view('main.blog.index');
     }
 }

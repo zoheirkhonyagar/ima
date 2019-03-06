@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Pcat;
 use App\Post;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -27,7 +28,8 @@ class PostController extends UploadController
      */
     public function create()
     {
-        return view('admin.post.create');
+        $pcats = Pcat::all();
+        return view('admin.post.create' , compact('pcats'));
     }
 
     /**
@@ -42,6 +44,7 @@ class PostController extends UploadController
             'title' => 'required',
             'image' => 'required|mimes:jpg,jpeg,bmp,png',
             'body' => 'required',
+            'pcat_id' => 'required|numeric'
         ]);
 
         $image = $request->file('image');
@@ -54,6 +57,7 @@ class PostController extends UploadController
             'title' => $request->title,
             'image' => $filename,
             'body' => $request->body,
+            'pcat_id' => $request->pcat_id
         ]);
 
         return redirect(route('post.index'));
@@ -78,7 +82,8 @@ class PostController extends UploadController
      */
     public function edit(Post $post)
     {
-        return view('admin.post.edit' , compact('post'));
+        $pcats = Pcat::all();
+        return view('admin.post.edit' , compact('post','pcats'));
     }
 
     /**
@@ -95,7 +100,7 @@ class PostController extends UploadController
             'title' => 'required',
             'image' => 'nullable|mimes:jpg,jpeg,bmp,png',
             'body' => 'required',
-
+            'pcat_id' => 'required|numeric'
         ]);
 
         $file = $request->file('image');
@@ -119,6 +124,7 @@ class PostController extends UploadController
             'title' => $request->title,
             'body' =>  $request->body,
             'image' => $filename,
+            'pcat_id' => $request->pcat_id
 
         ]);
 

@@ -35,7 +35,7 @@
                                 <a class="ima-bc-title {{ \Request::route()->getName() == 'main.portfolio.index' ? " ima-title-active" : '' }}" href="/portfolio">نمونه کارهای طراحی لوگو</a>
                             </li>
                             <li class="ima-bc-title">
-                                <a class="ima-bc-title {{ \Request::route()->getName() == 'blog' ? " ima-title-active" : '' }}" href="/blog">بلاگ</a>
+                                <a class="ima-bc-title {{ \Request::route()->getName() == 'main.post.index' ? " ima-title-active" : '' }}" href="/post">بلاگ</a>
                             </li>
                         </ul>
                     </nav>

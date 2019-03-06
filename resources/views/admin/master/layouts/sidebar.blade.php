@@ -92,6 +92,9 @@
                     <li>
                         <a href="{{ route('post.index') }}">لیست پست ها</a>
                     </li>
+                    <li>
+                        <a href="{{ route('pcat.index') }}">دسته بندی ها</a>
+                    </li>
                 </ul>
             </li>
         </ul>

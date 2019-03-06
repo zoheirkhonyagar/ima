@@ -1,5 +1,5 @@
 @extends('main.master')
 
 @section('content')
-    @include('main.blog.components.index')
+    @include('main.post.show.components.index')
 @endsection

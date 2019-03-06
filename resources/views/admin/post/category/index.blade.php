@@ -5,8 +5,8 @@
     <div class="col-lg-12">
         <div class="ibox float-e-margins">
             <div class="ibox-title">
-                    <h5>لیست اخبار</h5>
-                    <a class="btn btn-primary btn-xs" style="margin: 0px 20px 0px 0;font-size: 20px;line-height: 34px;" href="{{ route('post.create') }}">افزودن خبر</a>
+                    <h5>دسته بندی ها</h5>
+                    <a class="btn btn-primary btn-xs" style="margin: 0px 20px 0px 0;font-size: 20px;line-height: 34px;" href="{{ route('pcat.create') }}">افزودن دسته بندی</a>
                 <div class="ibox-tools">
                     <a class="collapse-link">
                         <i class="fa fa-chevron-up">
@@ -23,22 +23,18 @@
                     <thead>
                         <tr>
                             <th>عنوان</th>
-                            <th>دسته بندی</th>
-                            <th>تاریخ انتشار</th>
                             <th>عملیات</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($posts as $post)
+                        @foreach ($pcats as $pcat)
                             <tr>
-                                <td>{{ $post->title }}</td>
-                                <td>{{ $post->pcat->title }}</td>
-                                <td>{{ jdate($post->created_at)->format('%d %B %Y') }}</td>
+                                <td>{{ $pcat->title }}</td>
                                 <td class="text-navy">
-                                    <form action="{{ route('post.destroy' , [ 'id' => $post->id ]) }}" method="post">
+                                    <form action="{{ route('pcat.destroy' , [ 'id' => $pcat->id ]) }}" method="post">
                                         {{ method_field('delete') }}
                                         {{ csrf_field() }}
-                                        <a class="btn btn-info btn-xs"  href="{{ route( 'post.edit' , [ 'id' => $post->id ] ) }}">ویرایش</a>
+                                        <a class="btn btn-info btn-xs"  href="{{ route( 'pcat.edit' , [ 'id' => $pcat->id ] ) }}">ویرایش</a>
                                         <button type="submit" class="btn btn-danger btn-xs">حذف</button>
                                     </form>
                                 </td>
@@ -51,6 +47,6 @@
     </div>
 </div>
 
-{{ $posts->links() }}
+{{ $pcats->links() }}
 
 @endsection

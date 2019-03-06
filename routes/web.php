@@ -20,9 +20,13 @@ Route::get('/about-us' , 'HomeController@aboutUs')->name('about-us');
 
 // Route::get('/portfolio' , 'HomeController@portfolio');
 
-Route::get('/blog' , 'HomeController@blog')->name('blog');
+// Route::get('/blog' , 'HomeController@blog')->name('blog');
 
 Route::resource('/portfolio' , 'PortfolioController' , [
+    'as' => 'main'
+]);
+
+Route::resource('/post' , 'PostController' , [
     'as' => 'main'
 ]);
 
@@ -40,6 +44,8 @@ Route::group([ 'prefix' => 'admin' , 'namespace' => 'Admin' , 'middleware' => 'C
     // Route::resource('faq', 'ProductFaqController', [
     //     'as' => 'prefix'
     // ]);
+
+    $this->resource('pcat' , 'PcatController');
 
     $this->resource('category' , 'CategoryController');
 
