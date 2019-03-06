@@ -18,9 +18,13 @@ Auth::routes();
 
 Route::get('/about-us' , 'HomeController@aboutUs')->name('about-us');
 
-Route::get('/portfolio' , 'HomeController@portfolio')->name('portfolio');
+// Route::get('/portfolio' , 'HomeController@portfolio');
 
 Route::get('/blog' , 'HomeController@blog')->name('blog');
+
+Route::resource('/portfolio' , 'PortfolioController' , [
+    'as' => 'main'
+]);
 
 //admin routes
 Route::group([ 'prefix' => 'admin' , 'namespace' => 'Admin' , 'middleware' => 'CheckAdmin' ] , function(){
@@ -32,6 +36,10 @@ Route::group([ 'prefix' => 'admin' , 'namespace' => 'Admin' , 'middleware' => 'C
     })->name('admin-index');
 
     $this->resource('portfolio' , 'PortfolioController');
+
+    // Route::resource('faq', 'ProductFaqController', [
+    //     'as' => 'prefix'
+    // ]);
 
     $this->resource('category' , 'CategoryController');
 

@@ -24,51 +24,31 @@
         </div>
     </div>
 </section>
-<section id="bt_section5c49958ab4b88" class="boldSection gutter">
+{{-- radio louzi title --}}
+@foreach ($categories as $category)
+
+<section class="boldSection topSpaced btLightSkin gutter inherit">
     <div class="port">
         <div class="boldCell">
             <div class="boldCellInner">
                 <div class="boldRow ">
                     <div class="boldRowInner">
-                        <div class="rowItem col-md-12 col-ms-12  btTextLeft">
+                        <div class="rowItem col-md-2  col-sm-4 col-ms-12 btTextLeft">
+                            <div class="rowItemContent"></div>
+                        </div>
+                        <div class="rowItem col-md-8 col-ms-12 btTextCenter animate animate-fadein animate-moveleft inherit animated">
                             <div class="rowItemContent">
-                                <div class="btClear btSeparator topSemiSpaced bottomSemiSpaced noBorder">
-                                    <hr>
-                                </div>
-                                <header class="header btClear large btDash bottomDash  btNormalDash">
+                                <header class="header btClear large btDash bottomDash  btAccentDash">
                                     <div class="dash">
-                                        <h2><span class="headline">طراحی لوگو</span></h2></div>
-                                    <div class="btSubTitle">توجه شما را به تماشای مجموعه ای منتخب از نمونه کارهای طراحی لوگو که جهت آشنایی با سبک کاری ما نیز می باشد جلب می نماییم.</div>
+                                        <h2><span class="headline">{{ $category->title }}</span></h2></div>
                                 </header>
-                                <div class="btClear btSeparator topSemiSpaced bottomSemiSpaced noBorder">
-                                    <hr>
-                                </div>
-                                <div class="tilesWall btGridGallery tiled  btGridGap-0 lightbox" data-col="3" style="position: relative; height: 386px;">
-                                    <div class="gridSizer" style="width: 386px; height: 0px;"></div>
-                                    <div class="gridItem btGhostSliderThumb bt11" data-order-num="0" style="opacity: 1; position: absolute; left: 0px; top: 0px; width: 386px; height: 386px;">
-                                        <div class="btTileBox">
-                                            <div class="bpgPhoto ">
-                                                <a href="http://www.simpleart.ir/wp-content/uploads/2017/06/1rial.jpg" class="lightbox" data-title=""></a>
-                                                <div class="boldPhotoBox">
-                                                    <div class="bpbItem">
-                                                        <div class="btImage"><img src="http://www.simpleart.ir/wp-content/uploads/2017/06/1rial-540x540.jpg" alt=""></div>
-                                                    </div>
-                                                </div>
-                                                <div class="captionPane">
-                                                    <div class="captionTable">
-                                                        <div class="captionCell">
-                                                            <div class="captionTxt"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="btClear btSeparator topSemiSpaced bottomSemiSpaced noBorder">
+                                <div class="btClear btSeparator bottomSemiSpaced noBorder">
                                     <hr>
                                 </div>
                             </div>
+                        </div>
+                        <div class="rowItem col-md-2  col-sm-4 col-ms-12 btTextLeft">
+                            <div class="rowItemContent"></div>
                         </div>
                     </div>
                 </div>
@@ -76,3 +56,49 @@
         </div>
     </div>
 </section>
+<section class="boldSection topSemiSpaced bottomSpaced gutter inherit">
+    <div class="port">
+        <div class="boldCell">
+            <div class="boldCellInner">
+                <div class="boldRow ">
+                    <div class="boldRowInner">
+                        @foreach ($category->portfolios as $portfolio)
+                            <div style="margin-top:30px;" class="rowItem col-md-3 col-sm-6 col-ms-12 btTextLeft animate animate-fadein btTextIndent inherit btDarkSkin animated">
+                                <div class="rowItemContent color-ima">
+                                    <div class="bpgPhoto btTextCenter wIconOver">
+                                        <a href="{{ route('main.portfolio.show' , [ 'id' => $portfolio->id]) }}" target="_self"></a>
+                                        <div class="boldPhotoBox">
+                                            <div class="bpbItem">
+                                                <div class="btImage">
+                                                    <img src="{{ asset('uploads') . '/' . $portfolio->image }}" alt="{{ $portfolio->title }}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="captionPane">
+                                            <div class="captionTable">
+                                                <div class="captionCell">
+                                                    <div class="captionTxt"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <header class="header btClear medium  btNormalDash" style="margin-bottom: 0;">
+                                        <div class="dash">
+                                            <h3 class="color-ima"><span class="headline"><a class="ima-bc-title" href="{{ route('main.portfolio.show' , [ 'id' => $portfolio->id]) }}">{{ $portfolio->title }}</a></span></h3>
+                                        </div>
+                                    </header>
+                                    <div class="btText ima-bc-para">
+                                        <p>ساخت نشان و نماد تجاری، طراحی نشان تجاری، طراحی علامت تجاری، طراحی نماد و برند تجاری</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@endforeach
+

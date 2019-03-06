@@ -18,7 +18,7 @@
                                 <input type="text" name="title" value="{{ old('title') }}" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>انتخاب زیردسته</label>
+                                <label>انتخاب دسته</label>
                                 <select class="form-control m-b" name="category_id">
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}">{{ $category->title }}</option>

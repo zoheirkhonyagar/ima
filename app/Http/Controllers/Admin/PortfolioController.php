@@ -96,12 +96,10 @@ class PortfolioController extends UploadController
     public function update(Request $request, Portfolio $portfolio)
     {
         $this->validate($request , [
-
             'title' => 'required',
             'image' => 'nullable|mimes:jpg,jpeg,bmp,png',
             'body' => 'required',
             'category_id' => 'required|numeric'
-
         ]);
 
         $file = $request->file('image');
@@ -111,7 +109,6 @@ class PortfolioController extends UploadController
         if ($file) {
 
             $filename = $this->getUniqName($request->image);
-
             $file->move(public_path('uploads/') , $filename);
 
         } else {
@@ -121,7 +118,6 @@ class PortfolioController extends UploadController
         }
 
         $portfolio->update([
-
             'title' => $request->title,
             'body' =>  $request->body,
             'image' => $filename,

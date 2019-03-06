@@ -32,7 +32,7 @@
                                 <a class="ima-bc-title  {{ \Request::route()->getName() == 'about-us' ? " ima-title-active" : '' }}" href="/about-us">درباره ما</a>
                             </li>
                             <li class="ima-bc-title">
-                                <a class="ima-bc-title {{ \Request::route()->getName() == 'portfolio' ? " ima-title-active" : '' }}" href="/portfolio">نمونه کارهای طراحی لوگو</a>
+                                <a class="ima-bc-title {{ \Request::route()->getName() == 'main.portfolio.index' ? " ima-title-active" : '' }}" href="/portfolio">نمونه کارهای طراحی لوگو</a>
                             </li>
                             <li class="ima-bc-title">
                                 <a class="ima-bc-title {{ \Request::route()->getName() == 'blog' ? " ima-title-active" : '' }}" href="/blog">بلاگ</a>

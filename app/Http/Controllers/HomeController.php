@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
+use App\Portfolio;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('main.main-page.index');
+        $portfolios = Portfolio::take(4)->latest()->get();
+        return view('main.main-page.index' , compact(['portfolios']));
     }
 
     public function aboutUs()
@@ -33,7 +36,7 @@ class HomeController extends Controller
 
     public function portfolio()
     {
-        return view('main.portfolio.index');
+
     }
 
     public function blog()
