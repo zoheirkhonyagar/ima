@@ -22,7 +22,6 @@
                     <thead>
                         <tr>
                             <th>نام و نام خانوادگی</th>
-                            <th>شماره تماس</th>
                             <th>ایمیل</th>
                             <th>تاریخ ارسال</th>
                             <th>عملیات</th>
@@ -32,7 +31,6 @@
                         @foreach($contacts as $contact)
                             <tr>
                                 <td>{{ $contact->fullname }}</td>
-                                <td>{{ $contact->phone }}</td>
                                 <td>{{ $contact->email }}</td>
                                 <td>{{ jdate($contact->created_at)->format('%d %B %Y') }}</td>
                                 <td class="text-navy">

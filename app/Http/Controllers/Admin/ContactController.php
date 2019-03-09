@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Contact;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ContactController extends Controller
 {
@@ -14,7 +15,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        $contacts = Contact::all();
+        return view('admin.contact-us.index', compact('contacts'));
     }
 
     /**
@@ -35,14 +37,7 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request , [
-            'fullname' => 'required|string|max:255',
-            'body' => 'required',
-            'email' => 'required|string|email|max:255'
-        ]);
-
-        Contact::create($request->all());
-        return redirect(route('index'));
+        //
     }
 
     /**
@@ -53,7 +48,7 @@ class ContactController extends Controller
      */
     public function show(Contact $contact)
     {
-        //
+        return view('admin.contact-us.show', compact('contact'));
     }
 
     /**

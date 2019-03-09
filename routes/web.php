@@ -11,29 +11,6 @@
 |
 */
 
-
-Route::get('/' , 'HomeController@index')->name('index');
-
-Auth::routes();
-
-Route::get('/about-us' , 'HomeController@aboutUs')->name('about-us');
-
-// Route::get('/portfolio' , 'HomeController@portfolio');
-
-// Route::get('/blog' , 'HomeController@blog')->name('blog');
-
-Route::resource('/portfolio' , 'PortfolioController' , [
-    'as' => 'main'
-]);
-
-Route::resource('/post' , 'PostController' , [
-    'as' => 'main'
-]);
-
-Route::get('/contact-us' , 'HomeController@contactUs')->name('contact-us');
-
-Route::post('/contact-us' , 'ContactController@store')->name('contact-us-store');
-
 //admin routes
 Route::group([ 'prefix' => 'admin' , 'namespace' => 'Admin' , 'middleware' => 'CheckAdmin' ] , function(){
 
@@ -65,3 +42,27 @@ Route::group([ 'prefix' => 'admin' , 'namespace' => 'Admin' , 'middleware' => 'C
 
     $this->post('upload-image' , 'UploadController@uploadImageSubject');
 });
+
+
+Route::get('/' , 'HomeController@index')->name('index');
+
+Auth::routes();
+
+Route::get('/about-us' , 'HomeController@aboutUs')->name('about-us');
+
+// Route::get('/portfolio' , 'HomeController@portfolio');
+
+// Route::get('/blog' , 'HomeController@blog')->name('blog');
+
+Route::resource('/portfolio' , 'PortfolioController' , [
+    'as' => 'main'
+]);
+
+Route::resource('/post' , 'PostController' , [
+    'as' => 'main'
+]);
+
+Route::get('/contact-us' , 'HomeController@contactUs')->name('contact-us');
+
+Route::post('/contact-us' , 'ContactController@store')->name('contact-us-store');
+
