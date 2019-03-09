@@ -30,6 +30,10 @@ Route::resource('/post' , 'PostController' , [
     'as' => 'main'
 ]);
 
+Route::get('/contact-us' , 'HomeController@contactUs')->name('contact-us');
+
+Route::post('/contact-us' , 'ContactController@store')->name('contact-us-store');
+
 //admin routes
 Route::group([ 'prefix' => 'admin' , 'namespace' => 'Admin' , 'middleware' => 'CheckAdmin' ] , function(){
 
@@ -52,6 +56,8 @@ Route::group([ 'prefix' => 'admin' , 'namespace' => 'Admin' , 'middleware' => 'C
     $this->resource('post' , 'PostController');
 
     $this->resource('user' , 'UserController');
+
+    $this->resource('contact' , 'ContactController');
 
     $this->get('/panel/changepassview' , 'UserController@changePasswordView')->name('change-profile-password-view');
 

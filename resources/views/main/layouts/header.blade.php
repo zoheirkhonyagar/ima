@@ -37,6 +37,9 @@
                             <li class="ima-bc-title">
                                 <a class="ima-bc-title {{ \Request::route()->getName() == 'main.post.index' ? " ima-title-active" : '' }}" href="/post">بلاگ</a>
                             </li>
+                            <li class="ima-bc-title">
+                                <a class="ima-bc-title {{ \Request::route()->getName() == 'contact-us' ? " ima-title-active" : '' }}" href="/contact-us">تماس با ما</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="iScrollVerticalScrollbar iScrollLoneScrollbar" style="position: absolute; z-index: 9999; width: 7px; bottom: 2px; top: 2px; right: 1px; overflow: hidden; transform: translateZ(0px); transition-duration: 0ms; opacity: 0;">

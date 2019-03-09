@@ -45,4 +45,9 @@ class HomeController extends Controller
     {
         // return view('main.blog.index');
     }
+
+    public function contactUs()
+    {
+        return view('main.contact.index');
+    }
 }
