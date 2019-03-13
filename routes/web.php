@@ -14,11 +14,7 @@
 //admin routes
 Route::group([ 'prefix' => 'admin' , 'namespace' => 'Admin' , 'middleware' => 'CheckAdmin' ] , function(){
 
-    $this->get('/' , function () {
-
-        return view('admin.master.index');
-
-    })->name('admin-index');
+    $this->get('/' , 'HomeController@index')->name('admin-index');
 
     $this->resource('portfolio' , 'PortfolioController');
 
